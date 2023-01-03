@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 플러그인 - rotator 적용 예제</title>
+	<style>
+		img{ height : 300px; }
+		.divHeight { float:left; }
+		#movieselect{ clear:both; }
+	</style>
+	
+	<!-- 제이쿼리 인클루드 -->
+	<script src="./js/jquery.js"></script>
+	
+	<!-- 제이쿼리 플러그린 인클루드 -->
+	<script src="./js/jquery.rotator.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#rotator1').rotator({ms:100})
+		});
+	</script>
+
+</head>
+<body>
+	<h2>현재 상영작</h2>
+	<div id="rotator1">
+		<div class="divHeight">
+			<img alt="아바타2" src="./images/아바타2.png" hspace="="20">
+			<br><center><h3><b>아바타2</b></h3></center>
+		</div>
+			
+		<div class="divHeight">
+			<img alt="영웅" src="./images/영웅.png" hspace="="20">
+			<br><center><h3><b>영웅</b></h3></center>
+		</div>
+		
+		<div class="divHeight">
+			<img alt="올빼미" src="./images/올빼미.png" hspace="="20">
+			<br><center><h3><b>올빼미</b></h3></center>
+		</div>
+	
+	</div>
+	<br><br>
+	<h3 style="display:inline">영화 선택</h3>
+	<select id="movieselect">
+		<option selected>영화선택</option>
+		<option value="아바타">아바타</option>
+		<option value="영웅">영웅</option>
+		<option value="올빼미">올빼미</option>
+	</select>
+</body>
+</html>

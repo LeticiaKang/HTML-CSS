@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>부트스트랩 응용 예제</title>
+	
+	<!-- 추가 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta name="viewport"을 사용하면 반응형 웹을 구현할 수 있다.
+		content="width=device-width는 컨텐츠를 각 디바이스의 화면크기에 고혀하여 보여준다. initial-scale=1는 초기비율을 1로 설정하겠다. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- stylesheet는 외부에서 제공하는 css를 가져다 쓴다는 뜻이고 href에는 다운받은 파일이나 링크를 설정한다. 
+		<div class="container는 반응형으로 사용할 내용을 둘러싸는 그릇이다.-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 	<nav class="navbar navbar-inverse">  
+<!--	<nav class="navbar navbar-default"> -->
+		<div class="container-fluid">
+			<div class="narvar-header">
+				<a class="navbar-brand">MojiMoji</a>
+				<button type="button" class="navbar-toggle" 
+						data-toggle="collapse" data-target="#myNavbar" >
+						<!-- data-toggle="collapse" : 펼쳤다 접었다 하는 기능 -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			
+			<!-- 접었다 펼쳤다 기능 : collapse -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class = "dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						제품 소개<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">MRM 후원/회원관리 솔루션</a></li>
+							<li><a href="#">Midas 예산회계관리</a></li>
+							<li><a href="#">SCRM 국내/해외 아동결연관리</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</li>
+					
+					<li class = "dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						회사소개<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">미션과 비전</a></li>
+							<li><a href="#">연혁</a></li>
+							<li><a href="#">비전</a></li>
+							<!-- 줄 넣기<li class=divider></li> -->
+						</ul>
+					</li>
+					
+					<li class = "dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						개인정보취급방침<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">CEO인사말</a></li>
+							<li><a href="#">회사 연혁</a></li>
+							<li><a href="#">경영이념</a></li>
+							<li><a href="#">비전</a></li>
+							<li><a href="#">오시는 길</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>

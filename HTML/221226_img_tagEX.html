@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기업 사이트의 중요 이미지 동적으로 교체하기</title>
+	<style>
+		#img { width:500px ; height : 300px; }
+	</style>
+	<script>
+		var imgs = new Array();
+			
+			imgs.push("./img/img3.jpg")
+			imgs.push("./img/img4.jpg")
+			imgs.push("./img/img5.jpg")
+			
+			var index = 0; //전역변수 선언 및 초기화
+		
+			window.onload = function(){
+				setInterval("imageChange()", 2000); 
+			}
+// 중요: setInterval
+
+
+			function imageChange(){
+				var currentDate = new Date();
+				
+// document.getElementById("img") : html에 있는 코드는 자바스크립트에서 활용할 때
+				var img = document.getElementById("img")
+				
+//img 객체의 속성을 src로 줌, index 0번부터!
+            	img.src = imgs[index];
+            
+				index++;
+//index의 값이 배열의 길이와 같으면 index를 0으로 바꿔줌(1번부터)
+				if (index == imgs.length) index = 0;
+			}
+			
+	</script>
+</head>
+<body>
+	<center>
+		<h1> (주)휴먼 소프트웨어 이미지 동적 교체</h1>
+		<img id = "img">
+	</center>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>아이디 선택자 실습 예제</title>
+	<!-- id가 header인 것만 적용하겠다 -->
+	<style> 	
+		#header { 
+			width:800px;
+			margin:auto;
+			background:red;
+		}  	
+		#wrap { 
+			width:800px;
+			margin:auto;
+		} 	
+		#content { 
+			width:600px;
+			float:left;
+			background:green;
+		} 	
+		#aside { 
+			width:200px;
+			float:right;
+			background:yellow;
+		}
+		#style_para { 
+			color:blue;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>#header 태그</h1>
+	</div>
+	<div id="wrap">
+		<div id="content">
+			<h1>#content태그</h1>
+		</div>
+		<div id="aside">
+			<h1>#aside태그</h1>
+		</div>
+		<br>
+		<p id="style_para">CSS 실습 예제</p>
+		<p> 아이디 태그가 없어서 스타일이 적용되지 않음</p>
+	</div>
+</body>
+</html>
